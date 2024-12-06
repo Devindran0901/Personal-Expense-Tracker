@@ -1,0 +1,54 @@
+.hero {
+    height: 25vh;
+    background-image: url(/images/home-bg.jpeg); /* inserted picture behind the h1 */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero h1 {
+    font-family: 'Times New Roman';
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+}
+
+.bgcolor {
+    background-image: url(/images/login-bg.jpeg); /* inserted picture for the background */
+    background-color:black;
+}
+
+.footer {
+    color:white; /* changed font color for the footer */
+}
+
+.quote	{
+	font-family: 'Tangerine', cursive;
+	text-align:center;
+    font-size: 3.5rem;
+	color:white;
+	-webkit-animation:colorchange 1000ms infinite alternate; 
+}
+
+@-webkit-keyframes colorchange { /* animation for the word to change color */
+    0% {color:#D82936;}
+    25%{color:#D82936;}
+    50%{color:white;}
+    100% {color: white;}
+    }
+
+::-webkit-scrollbar /* design for the scrollbar */
+{
+    width:15px;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(to bottom,transparent, lightgrey,white);
+    border-radius:10px;
+}
+::-webkit-scrollbar-track{
+    background-color:black;
+}

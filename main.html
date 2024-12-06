@@ -1,0 +1,91 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Expense Tracker</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrapicons/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet"><!-- import external link for css -->
+    <link rel="stylesheet" href="main.css"><!-- calls css file -->
+</head>
+<body class="bgcolor">
+<div id="scrollPath"></div>
+
+    <div class="hero">
+        <div>
+            <h1>Personal Expense Tracker</h1>
+            <h2 class="quote">Want to get control of your money ?</h2>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        
+        <!-- Expense Form -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Log Your Expense</h5>
+                <form id="expenseForm">
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Date</label>
+                        <input type="date" id="date" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="amount" class="form-label">Amount (RM)</label>
+                        <input type="number" id="amount" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="category" class="form-label">Category</label>
+                        <select id="category" class="form-select" required>
+                            <option value="Food & Beverages">Food & Beverages</option>
+                            <option value="Rent">Rent</option>
+                            <option value="Transport">Transport</option>
+                            <option value="Entertainment">Entertainment</option>
+                            <option value="Investment">Investment</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Add Expense</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- View and Edit Expenses Table -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Your Expenses</h5>
+                <table class="table table-striped table-bordered">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Date</th>
+                            <th>Amount (RM)</th>
+                            <th>Category</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expenseTableBody">
+                        <!-- Dynamic Expense Rows Will Be Added Here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Summary Section -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Your Expense Summary</h5>
+                <button id="viewSummaryButton" class="btn btn-secondary mb-3">View Summary</button>
+                <p id="summaryText" class="text-primary fw-bold"></p>
+            </div>
+        </div><br>
+
+        <!-- Logout Button -->
+        <div class="text-center mt-3">
+            <button id="logoutButton" class="btn btn-danger">Logout</button>
+            </div>
+    </div>
+    <br>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main.js"></script><!-- calls function from javascript file -->
+</body><br><br><br>
+<center><footer><p class="footer">&copy; 2024 UNIVERSITI UTARA MALAYSIA</p></footer></center>
+</html>

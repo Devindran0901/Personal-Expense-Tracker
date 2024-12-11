@@ -1,6 +1,6 @@
 .hero {
     height: 25vh;
-    background-image: url(/images/home-bg.jpeg); /* inserted picture behind the h1 */
+    background-image: url(./images/home-bg.jpeg); /* inserted picture behind the h1 */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -18,7 +18,7 @@
 }
 
 .bgcolor {
-    background-image: url(/images/login-bg.jpeg); /* inserted picture for the background */
+    background-image: url(./images/login-bg.jpeg); /* inserted picture for the background */
     background-color:black;
 }
 
